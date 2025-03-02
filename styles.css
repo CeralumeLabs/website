@@ -12,26 +12,34 @@ body {
     background-color: #000; /* Black background throughout */
     line-height: 1.6;
     font-size: 18px; /* Base font size */
-    text-align: center; /* Center-align all text */
+    text-align: center; /* Center-align for headings, buttons, etc. */
 }
 
-/* Headings - Montserrat font with yellow color */
-h1, h2, h3 {
+/* Headings - Montserrat font with different yellow shades */
+h1 {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
-    color: #ffd700; /* Yellow */
-}
-
-h1 {
+    color: #ffea00; /* Bright yellow for h1 */
     font-size: 2.75rem; /* 44px */
 }
 
 h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    color: #ffd700; /* Golden yellow for h2 */
     font-size: 2.25rem; /* 36px */
 }
 
 h3 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    color: #ffcc00; /* Soft yellow for h3 */
     font-size: 1.75rem; /* 28px */
+}
+
+/* Emphasis tags - Pale yellow */
+em {
+    color: #fffacd; /* Pale yellow for emphasis */
 }
 
 /* Hamburger Menu Button */
@@ -49,7 +57,7 @@ h3 {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #ffd700;
+    background-color: #ffd700; /* Keeping golden yellow for menu icon */
     margin: 6px 0;
     transition: all 0.3s ease;
 }
@@ -72,7 +80,7 @@ h3 {
 }
 
 #nav-menu a {
-    color: #ffd700;
+    color: #ffd700; /* Golden yellow for nav links */
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -111,6 +119,17 @@ section {
     flex: 1; /* Takes remaining space */
 }
 
+.text-content p, .text-content ul {
+    text-align: justify; /* Justify paragraph and list text */
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: disc;
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
 /* Service box styling */
 #services .service-box {
     display: flex; /* Flexbox for image and text side-by-side */
@@ -124,11 +143,15 @@ section {
     flex: 1; /* Takes remaining space in service-box */
 }
 
+#services .service-text p, #services .service-text ul {
+    text-align: justify; /* Justify paragraph and list text in services */
+}
+
 /* Button styles */
 .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background-color: #ffd700;
+    background-color: #ffd700; /* Golden yellow for buttons */
     color: #000;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 700;
@@ -145,7 +168,7 @@ section {
 
 /* Contact link styles */
 #contact a {
-    color: #ffd700;
+    color: #ffd700; /* Golden yellow for links */
     font-size: 18px;
     text-decoration: none;
 }
