@@ -1,0 +1,11 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <script>
+            // Redirect to index.html, preserving the path for client-side routing
+            var path = window.location.pathname.replace(/.*\/([^\/]+)$/, '/$1'); // Extract path after repo name
+            window.location.replace(window.location.origin + window.location.pathname.split('/')[0] + '/' + window.location.pathname.split('/')[1] + '/#' + path);
+        </script>
+    </head>
+    <body></body>
+    </html>
